@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+   
+    
+    
+    <div class = "menu" >
+     
+      <div class = "toggle" > 
+         
+      
+       <button id ="startBtn" onclick="startGame()">
+           START
+        </button>
+        <button id = "stopBtn" class = "hidden" onclick="stopGame()">
+          STOP
+        </button>
+      </div>
+    
+      <div id ="gameButtonArea" >
+       
+        
+      
+        <li style = "--i:0;">
+          <a href="#"> <button id  ="button1"  onclick="guess(1)" onmousedown = "startTone(1)" onmouseup ="stopTone()">
+            <img src="https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-tuning-fork-96.png?v=1648268983310">
+            </button></a>        
+        </li>
+        <li style = "--i:1;">
+          <a href="#"><button id  ="button2"  onclick="guess(2)" onmousedown = "startTone(2)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-cymbals-96.png?v=1648270613019">
+            </button></a>        
+        </li>
+        <li style = "--i:2;">
+          <a href="#"><button id  ="button3"  onclick="guess(3)" onmousedown = "startTone(3)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-drum-set-96.png?v=1648270620500">
+            </button></a>        
+        </li>
+        <li style = "--i:3;">
+          <a href="#"><button id  ="button4"  onclick="guess(4)" onmousedown = "startTone(4)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-harp-96.png?v=1648270628345">
+            </button></a>        
+        </li>
+        <li style = "--i:4;">
+          <a href="#"><button id  ="button5"  onclick="guess(5)" onmousedown = "startTone(5)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-maracas-80.png?v=1648270636281">
+            </button></a>        
+        </li>
+        <li style = "--i:5;">
+          <a href="#"><button id  ="button6"  onclick="guess(6)" onmousedown = "startTone(6)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-rock-music-96.png?v=1648270652716">
+            </button></a>        
+        </li>
+        <li style = "--i:6;">
+          <a href="#"><button id  ="button7"  onclick="guess(7)" onmousedown = "startTone(7)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-saxophone-96.png?v=1648270660305">
+            </button></a>        
+        </li>
+        <li style = "--i:7;">
+          <a href="#">  <button id  ="button8"  onclick="guess(8)" onmousedown = "startTone(8)" onmouseup ="stopTone()">
+            <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/icons8-xylophone-96.png?v=1648270667913">
+            </button></a>        
+        </li>
+        
+      </div>
+       
+    </div>
+    <a href ="#" class ="animated"> <button id = "h2">
+     <img src ="https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/light-bulb.png?v=1648587819846">
+    </button>AND &nbsp <button id ="h3">
+      <img src = "https://cdn.glitch.global/820da466-af19-4f13-8529-67b1ebefc6ad/musical-note.png?v=1648588041407">
+    </button>&nbsp MEMORY GAME</a>
+      
+   
+     <section>
+    <div class = "container">
+      <h1>
+        00:00
+      </h1>
+      </div>
+    </section>
+    
+    <button id="mistake">
+     3 Tries Left!
+    </button>
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+      <script>
+       let toggle = document.querySelector('.toggle');
+       let menu = document.querySelector('.menu');
+       menu.onclick = function(){
+        menu.classList.toggle('active')
+       }
+      </script>
+      
+      
+      
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+    
+     
+      
+      
+      
+      
+      
+      
+    
+   
+    
+  </body>
+</html>

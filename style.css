@@ -1,0 +1,255 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+
+body {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+  font-family:helvetica,arial,sans-serif;
+  margin: 2em;
+  background-color : lightblue;
+  color:white;
+}
+
+button
+{
+  padding:10px;
+  border-radius: 200px;
+  z-index:1;
+}
+.menu{
+  position: relative;
+  width:800px;
+  height: 400px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+ .menu li
+{
+  
+  position:absolute;
+  left:100px;
+  list-style:none;
+  opacity:100;
+  transform-origin: 300px;
+  transition:0.5s;
+  top:150px;
+  
+  transform: rotate(calc(360deg / 8 * var(--i)));
+ }
+
+
+
+
+
+.toggle
+{ top:100px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: orange;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+  transition: transform 1.25s;
+}
+
+#mistake
+{
+  position:absolute;
+  background:lightgreen;
+  z-index:10;
+  color:black;
+  content:"3 TRIES LEFT";
+  visibility: visible;
+  top:58%;
+}
+
+
+
+#gameButtons> button{
+  width:800px;
+  height:800px;
+  margin:2px;
+  
+}
+
+.hidden{
+  display:none;
+}
+#button1 {
+  background: lightgreen;
+  
+  width: 120px;
+  height: 120px;
+  }
+#button1:active, #button1.lit{
+  
+  background:green;
+  width: 130px;
+  height: 130px;
+}
+#button2{
+  background: lightblue;
+  width: 120px;
+  height: 120px;
+}
+#button2:active, #button2.lit {
+  background:blue;
+   width: 130px;
+  height: 130px;
+}
+#button3{
+  background: pink;
+  width: 120px;
+  height: 120px;
+}
+#button3:active, #button3.lit{
+  background:red;
+   width: 130px;
+  height: 130px;
+}
+#button4{
+  background: lightyellow;
+  width: 120px;
+  height: 120px;
+}
+#button4:active, #button4.lit{
+  background:yellow;
+  width: 130px;
+  height: 130px;
+}
+#button5 {
+  background: lightgreen;
+  width: 120px;
+  height: 120px;
+  }
+#button5:active, #button5.lit{
+  
+  background:green;
+   width: 130px;
+  height: 130px;
+}
+#button6{
+  background: lightblue;
+   width: 120px;
+  height: 120px;
+}
+#button6:active, #button6.lit {
+  background:blue;
+   width: 130px;
+  height: 130px;
+}
+#button7{
+  background: pink;
+   width: 120px;
+  height: 120px;
+}
+#button7:active, #button7.lit{
+  background:red;
+   width: 130px;
+  height: 130px;
+}
+#button8{
+  background: lightyellow;
+  width: 120px;
+  height: 120px;
+}
+#button8:active, #button8.lit{
+  background:yellow;
+  width: 130px;
+  height: 130px;
+}
+
+
+section{
+  top:36%;
+  height:5vh;
+  width:10vh;
+  left:47%;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  }
+h1
+{ 
+  position:absolute;
+  top:50px;
+  left:-5px;
+  z-index:20;
+  font-family:verdana,arial,sans-serif;
+  font-size:30px;
+}
+.animated
+{ 
+  position:absolute;
+  top:50px;
+  font-size:60px;
+  font-weight:900;
+  text-decoration:none;
+  background: linear-gradient(to right, #CCCCCC 50%, #FF5858 50%, #CC2E5D);
+  background-size:200%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-colour:transparent;
+  transition:0.5s ease-out;
+  
+
+}
+.animated:hover{
+  background-position:-100%;
+}
+
+#h2
+{
+   background: cornflowerblue;
+   border-radius:50%;
+   box-shadow: 0 3px 4px rgba(0,0,0,0.35);
+   color:var(black);
+   text-decoration: none;
+   transform:scale(0.15);
+   position:absolute;
+   z-index:10;
+   top:-350%;
+   left:-46%;
+  
+  }
+#h2:hover 
+{
+    color:blanchedalmond;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,0 0 80px #2196f3;
+    transition-delay: 0.1s;
+}
+#h3{
+    background: orange;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.35);
+    color:var(black);
+    text-decoration: none;
+    transform:scale(0.15);
+    position:absolute;
+    z-index:10;
+  top:-350%;
+  left:-14%;
+   
+}
+#h3:hover 
+{
+    color:blanchedalmond;
+    background: orange;
+    box-shadow: 0 0 10px orange, 0 0 40px orange,0 0 80px orange;
+    transition-delay: 0.1s;
+}
+
+
+  
+  
+
