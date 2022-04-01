@@ -12,7 +12,7 @@ Link to project: (https://prism-fluffy-cheek.glitch.me/#)
 
 The following **required** functionality is complete:
 
-* [ YES ] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
+* [X] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
 * [ YES ] "Start" button toggles between "Start" and "Stop" when clicked. 
 * [ YES ] Game buttons each light up and play a sound when clicked. 
 * [ YES ] Computer plays back sequence of clues including sound and visual cue for each button
